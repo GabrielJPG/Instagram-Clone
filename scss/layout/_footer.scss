@@ -1,0 +1,10 @@
+.footer{
+    
+    &--login{
+        display: grid;
+        grid-template: 1fr/ 1fr;
+        background: lightcoral;
+        padding: 20px;
+    }
+  
+}

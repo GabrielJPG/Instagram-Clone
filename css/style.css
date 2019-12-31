@@ -1,0 +1,71 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 0;
+  margin: 0;
+}
+
+.footer--login {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+  -ms-grid-columns: 1fr;
+      grid-template: 1fr/ 1fr;
+  background: lightcoral;
+  padding: 20px;
+}
+
+.main {
+  margin-top: 30px;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  height: 100vh;
+  -ms-grid-rows: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template: 1fr 1fr / 1fr 1fr;
+  width: 100%;
+  max-width: 935px;
+  margin: 0 auto;
+}
+
+.item {
+  background: #1d7fa0;
+  border: 1px solid rosybrown;
+}
+
+.item:nth-of-type(1) {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  grid-row: 1 / span 3;
+}
+
+.item:nth-of-type(2) {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  grid-row: 1 / span 3;
+}
+
+.item:nth-of-type(3) {
+  grid-column: 2 / -1;
+}
+
+.slider-image {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login-panel .login-logo {
+  width: 175px;
+  margin: 25px auto 10px;
+  display: block;
+}
+/*# sourceMappingURL=style.css.map */
