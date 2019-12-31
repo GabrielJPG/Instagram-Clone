@@ -5,6 +5,10 @@
   margin: 0;
 }
 
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .footer--login {
   display: -ms-grid;
   display: grid;
@@ -63,9 +67,27 @@
           align-items: center;
 }
 
+.login-panel {
+  width: 348px;
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 1px;
+  margin: 0 0 10px;
+  padding: 10px 0;
+}
+
 .login-panel .login-logo {
   width: 175px;
   margin: 25px auto 10px;
   display: block;
+}
+
+.login-panel .heading {
+  font-weight: 600;
+  line-height: 20px;
+  font-size: 17px;
+  margin: 0 40px 10px;
+  color: #999;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
