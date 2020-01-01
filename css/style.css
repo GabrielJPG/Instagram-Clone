@@ -153,14 +153,14 @@ body {
 .login-panel .login-body .form-user:focus + label, .login-panel .login-body .form-password:focus + label {
   display: initial;
   opacity: 1;
-  top: 25px;
-  left: 49px;
+  top: 5px;
+  left: 10px;
   -webkit-transition: all .3s;
   transition: all .3s;
 }
 
 .login-panel .login-body .form-password:focus + label {
-  top: 65px;
+  top: 45px;
   -webkit-transition: all .3s;
   transition: all .3s;
 }
@@ -174,12 +174,10 @@ body {
 
 .login-panel .login-body .form .placeholder-user {
   top: 30px;
-  left: 49px;
 }
 
 .login-panel .login-body .form .placeholder-password {
   top: 70px;
-  left: 49px;
 }
 
 .login-panel .login-body .divider {
