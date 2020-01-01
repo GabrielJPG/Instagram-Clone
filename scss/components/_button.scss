@@ -1,4 +1,12 @@
-.button{
-    padding: 10px 20px;
-    color: $white;
+.button {
+    padding: 6px 9px;
+    color: white;
+    background: $blue;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 15px 0;
+    cursor: pointer;
 }
