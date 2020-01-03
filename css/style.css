@@ -150,10 +150,10 @@ body {
     opacity: 0;
   }
   33.333% {
-    opacity: 0;
+    opacity: 1;
   }
   66.666% {
-    opacity: 1;
+    opacity: 0;
   }
   100% {
     opacity: 0;
@@ -165,10 +165,10 @@ body {
     opacity: 0;
   }
   33.333% {
-    opacity: 0;
+    opacity: 1;
   }
   66.666% {
-    opacity: 1;
+    opacity: 0;
   }
   100% {
     opacity: 0;
@@ -227,6 +227,11 @@ body {
   grid-column: 2 / -1;
   position: relative;
   left: 27px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template: 1fr 1fr / 1fr 1fr;
 }
 
 .slider-image {
@@ -238,6 +243,32 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.app-info {
+  width: 348px;
+}
+
+.app-info__header {
+  grid-column: 1 / -1;
+  color: #262626;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 10px 20px;
+  text-align: center;
+}
+
+.app-info__apple, .app-info__android {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.app-info__apple a img,
+.app-info__android a img {
+  height: 40px;
 }
 
 .login-panel {

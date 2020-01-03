@@ -31,6 +31,8 @@
         grid-column: 2 / -1;
         position: relative;
         left: 27px;
+        display: grid;
+        grid-template: 1fr 1fr / 1fr 1fr;
     }
 }
 
@@ -38,4 +40,25 @@
     display: grid;
     justify-content: center;
     align-items: center;
+}
+
+.app-info {
+    width: 348px;
+    &__header {
+        grid-column: 1 / -1;
+        color: #262626;
+        font-size: 14px;
+        line-height: 18px;
+        margin: 10px 20px;
+        text-align: center;
+    }
+    &__apple,
+    &__android {
+        display: grid;
+        justify-content: center;
+    }
+    &__apple a img,
+    &__android a img {
+        height: 40px;
+    }
 }
