@@ -1,9 +1,8 @@
 @import "base/base";
 @import "base/typo";
-
+@import "base/animations";
 @import "layout/_footer";
-
 @import "pages/login";
-
 @import "components/loginPanel";
 @import "components/button";
+@import "components/phonetransition";
