@@ -1,104 +1,100 @@
 .login-panel {
-    width: 348px;
+    width: 350px;
     background-color: #fff;
     border: 1px solid #e6e6e6;
     border-radius: 1px;
     margin: 0 0 10px;
     margin-top: 33px;
-    padding-bottom: 10px;
-    & .login-logo {
+    padding: 0px 40px 10px 40px;
+    &__logo {
         width: 185px;
-        margin: 25px auto 10px;
+        margin: 22px auto 31px;
         display: block;
     }
-    & .login-body {
-        padding: 20px 40px;
-        & .form {
-            display: grid;
-            row-gap: 6px;
-            position: relative;
-            &-user,
-            &-password {
-                padding: 14px 0px 2px 8px;
-                font-family: inherit;
-                font-size: 10.5px;
-                height: 36px;
-                background: $grey;
-                border-radius: 4px;
-                border: 1px solid #ececec;
-                outline: none;
-                &:focus+label {
-                    display: initial;
-                    opacity: 1;
-                    top: 5px;
-                    left: 10px;
-                    transition: all .3s;
-                }
-            }
-            &-password:focus+label {
-                top: 45px;
-                transition: all .3s;
-            }
-            & .placeholder {
-                font-size: 10px;
-                color: #999999;
-                position: absolute;
-                opacity: 0;
-                &-user {
-                    top: 30px;
-                }
-                &-password {
-                    top: 70px;
-                }
-            }
+    &__divider {
+        display: grid;
+        grid-template: 1fr / 1fr 50px 1fr;
+        align-items: center;
+        & div:nth-child(1),
+        & div:nth-child(3) {
+            height: 1px;
+            width: 100%;
+            background: #efefef;
         }
-        .divider {
-            display: grid;
-            grid-template: 1fr / 1fr 50px 1fr;
-            align-items: center;
-            & div:nth-child(1),
-            & div:nth-child(3) {
-                height: 1px;
-                width: 100%;
-                background: #efefef;
-            }
-            & div:nth-child(2) {
-                text-align: center;
-                font-size: 13px;
-                font-weight: 600;
-                line-height: 15px;
-                color: #999;
-            }
-        }
-        .login-facebook {
-            color: #385185;
-            font-size: 14px;
+        & div:nth-child(2) {
+            text-align: center;
+            font-size: 13px;
             font-weight: 600;
-            line-height: 18px;
-            margin-top: 25px;
-            padding: 0 28px;
-            & .image-fb {
-                background: url(../../img/login/facebook-icon.png);
-                width: 16px;
-                height: 16px;
-                margin-right: 8px;
-                position: relative;
-                top: 3px;
+            line-height: 15px;
+            color: #999;
+        }
+    }
+    .login-facebook {
+        color: #385185;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 18px;
+        margin-top: 25px;
+        padding: 0 28px;
+        & .image-fb {
+            background: url(../../img/login/facebook-icon.png);
+            width: 16px;
+            height: 16px;
+            margin-right: 8px;
+            position: relative;
+            top: 3px;
+        }
+    }
+    .forgot-password {
+        display: grid;
+        justify-content: center;
+        margin: 10px 0;
+        & a {
+            font-size: 12px;
+            line-height: 14px;
+            margin-top: 12px;
+            text-align: center;
+            color: #003569;
+            text-decoration: none;
+            font-family: inherit;
+        }
+    }
+}
+
+.form {
+    display: grid;
+    &__group {
+        position: relative;
+        margin-bottom: 7px;
+        & .input__user,
+        & .input__password {
+            height: 37px;
+            padding: 9px 0px 0px 8px;
+            background-color: #fafafa;
+            width: 100%;
+            border: 1px solid #efefef;
+            border-radius: 3px;
+            outline: none;
+            font-size: 12px;
+            font-family: inherit;
+            &:focus {
+                border: 1px solid #bebebe;
             }
         }
-        .forgot-password {
-            display: grid;
-            justify-content: center;
-            margin: 10px 0;
-            & a {
-                font-size: 12px;
-                line-height: 14px;
-                margin-top: 12px;
-                text-align: center;
-                color: #003569;
-                text-decoration: none;
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            }
+        & .input__user:placeholder-shown+.input__label,
+        & .input__password:placeholder-shown+.input__label {
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(1rem);
+        }
+        & .input__label {
+            position: absolute;
+            top: 3px;
+            color: #999;
+            font-size: 10px;
+            left: 8px;
+            pointer-events: none;
+            transition: all .3s;
         }
     }
 }
@@ -108,11 +104,13 @@
     border: 1px solid #e6e6e6;
     border-radius: 1px;
     width: 348px;
+    height: 63px;
     margin: 0 0 10px;
     text-align: center;
-    padding-top: 15px;
+    padding-top: 20px;
     color: #262626;
     font-size: 14px;
+    font-weight: 300;
     & a {
         text-decoration: none;
         font-weight: 600;

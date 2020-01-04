@@ -33,6 +33,8 @@
         left: 27px;
         display: grid;
         grid-template: 1fr 1fr / 1fr 1fr;
+        position: relative;
+        top: -29px;
     }
 }
 
@@ -60,5 +62,11 @@
     &__apple a img,
     &__android a img {
         height: 40px;
+    }
+    &__apple {
+        margin-left: 30px;
+    }
+    &__android {
+        margin-right: 30px;
     }
 }
