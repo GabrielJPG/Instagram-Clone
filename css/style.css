@@ -272,6 +272,10 @@ body {
           align-items: center;
 }
 
+.position-fix {
+  position: relative;
+}
+
 .app-info {
   width: 348px;
 }
@@ -478,8 +482,8 @@ body {
 .slider-image .image-transition {
   width: 240px;
   height: 427px;
-  left: 158px;
-  top: 103px;
+  left: 151px;
+  top: 100px;
   position: absolute;
 }
 

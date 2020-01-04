@@ -45,6 +45,10 @@
     align-items: center;
 }
 
+.position-fix {
+    position: relative;
+}
+
 .app-info {
     width: 348px;
     &__header {
