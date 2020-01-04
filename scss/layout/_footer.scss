@@ -1,10 +1,26 @@
-.footer{
-    
-    &--login{
-        display: grid;
+.footer {
+    &--login {
+        /* display: grid;
         grid-template: 1fr/ 1fr;
-        background: lightcoral;
-        padding: 20px;
+        background: lightcoral; */
+        padding: 85px 0px 50px 0px;
+        width: 100%;
+        margin: 0 auto;
+        max-width: 1012px;
+        & .navigation ul {
+            display: grid;
+            grid-template: 1fr / repeat(12, auto);
+            padding: 0px;
+            text-transform: uppercase;
+            font-size: 12px;
+            color: #003569;
+            font-weight: 600;
+            & li:last-child {
+                font-size: 13px;
+                color: #999999;
+                width: 231px;
+                justify-self: flex-end;
+            }
+        }
     }
-  
 }

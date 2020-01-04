@@ -9,6 +9,11 @@ $grey: #fafafa;
     margin: 0;
 }
 
+li {
+    text-decoration: none;
+    list-style: none;
+}
+
 ::placeholder {
     font-size: 12px;
     color: #999999;
