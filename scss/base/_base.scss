@@ -9,16 +9,28 @@ $grey: #fafafa;
     margin: 0;
 }
 
+li {
+    text-decoration: none;
+    list-style: none;
+}
+
 ::placeholder {
     font-size: 12px;
+    color: #999999;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     position: relative;
     top: -4px;
 }
 
-input:focus::placeholder {
+
+/* input:focus::placeholder {
     color: transparent;
-}
+} */
 
 html {
     background: $grey;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
